@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="327.0" prefWidth="481.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ifg.controller.FXMLRecuperarSenhaController">
+   <children>
+      <Label layoutX="66.0" layoutY="143.0" text="Digite seu Email:" />
+      <TextField fx:id="txtEmailRecuperar" layoutX="65.0" layoutY="165.0" prefHeight="25.0" prefWidth="348.0" promptText="email@centromedico.com" />
+      <ImageView fitHeight="87.0" fitWidth="149.0" layoutX="41.0" layoutY="31.0" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo-principal.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="274.0" layoutY="51.0" text="Recuperar" textFill="#8d8d8d">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNovaSenha" editable="false" layoutX="65.0" layoutY="229.0" promptText="Senha" visible="false" />
+      <TextField fx:id="txtNovoID" editable="false" layoutX="264.0" layoutY="228.0" promptText="ID" visible="false" />
+      <Button fx:id="btnConfirmarRecuperacao" layoutX="165.0" layoutY="268.0" mnemonicParsing="false" onAction="#confimarRecuperacao" text="Confirmar" />
+      <Button fx:id="btnVoltarLogin" layoutX="240.0" layoutY="268.0" mnemonicParsing="false" onAction="#voltarLogin" prefHeight="25.0" prefWidth="71.0" text="Voltar" />
+      <Label layoutX="112.0" layoutY="203.0" text="Sua Senha:" />
+      <Label layoutX="329.0" layoutY="203.0" text="Seu ID:" />
+      <Button fx:id="btnAtivarNovoSenha" layoutX="80.0" layoutY="197.0" mnemonicParsing="false" onAction="#ativarNovoSenha" prefHeight="25.0" prefWidth="26.0" text="+">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAtivarNovoID" layoutX="301.0" layoutY="197.0" mnemonicParsing="false" onAction="#ativarNovoID" prefHeight="25.0" prefWidth="25.0" text="+">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="261.0" layoutY="84.0" text="Senha ou ID" textFill="#8d8d8d">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
